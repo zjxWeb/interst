@@ -1,2 +1,36 @@
 /* 全局的js,css */
 *{margin: 0; padding: 0; list-style: none;}
+/*主页的样式*/
+.indexListOne li{
+	width: 20vw;
+	height: 80px;
+	background: red;
+	float: left;
+	margin-left:4vw ;
+	margin-top: -3vh;
+	/*clear: both;*/
+}
+.indexListTwo li{
+	width: 20vw;
+	height: 80px;
+	background: red;
+	float: left;
+	margin-left:4vw ;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.mui-control-content {
+	background-color: white;
+	min-height: 215px;
+}
+.mui-control-content .mui-loading {
+	margin-top: 50px;
+}
+/*辅助margin-top*/
+.bloke{
+	clear: both;
+	width: 100vw;
+	height: 10px;
+	margin-top: -100px;
+	background-color: green;
+}

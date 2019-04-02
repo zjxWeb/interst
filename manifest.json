@@ -125,5 +125,29 @@
 				}
 			}
 		}
+	},
+	"dependencies": {
+		"pages": {
+			"index.html": {
+				"resources": [],
+				"refer": [
+					"test.html"
+				],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"LICENSE",
+				"js/mui.min.js",
+				"fonts/mui.ttf",
+				"css/mui.min.css",
+				"css/style.css",
+				"js/mui.js",
+				"css/mui.css",
+				"js/index.js",
+				"README.md"
+			]
+		}
 	}
 }
