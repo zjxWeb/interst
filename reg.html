@@ -107,9 +107,6 @@
 				}
 			},
 			error:function(xhr,type,errorThrown){
-//				if(xhr.status === 400){
-//					mui.toast("信息有错误");
-//				}
 				var a = JSON.parse(xhr.response);
 				if(a.email != undefined){
 					err.innerHTML = a.email;

@@ -34,3 +34,45 @@
 	margin-top: -100px;
 	background-color: green;
 }
+/*my.html*/
+.my_av{
+	width: 100vw;
+	height: 30vh;
+	background-color: #008000;
+	z-index: -1;
+}
+.avt{
+	width: 80px;
+	height: 80px;
+	background:red;
+	position: relative;
+	top: 5vh;
+	left: 38vw;
+	border-radius: 50%;
+}
+.avt p{
+	color: black;
+	position: relative;
+	top: 15vh;
+	left: 8px;
+}
+.main_button{
+	width: 80vw;
+	height: 6vh;
+	margin-top: 30px;
+	margin-left: 10vw;
+	padding: 5px 0;
+}
+.mainList li{
+	height: 40px;
+	margin-top: 10px;
+}
+.mainList li p{
+	margin-top: -10px;
+	margin-left: 10vw;
+}
+.icLe{
+	position: relative;
+	top: -32px;
+	left: 90vw;
+}

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html class="ui-page-login">
-
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<title></title>
-		<link href="css/mui.min.css" rel="stylesheet" />
-		<link href="css/style.css" rel="stylesheet" />
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<style>
 			.area {
 				margin: 20px auto 0px auto;
@@ -151,10 +152,10 @@
 			
 				if(data.success === true)
 				{
-					alert("登陆成功");
+					toast("登陆成功");
 					mui.openWindow({
-					url:"my.html",
-						id:"my"
+					url:"index.html",
+						id:"index"
 					})
 				}
 			
