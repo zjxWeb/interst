@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: '黑体';
+}
+.mui-table-view{
+
+	width: auto;
+	margin-top: 0.4rem;;
+} 
+.chat-list{
+	height: 5rem;
+	width: auto; 
+	margin-top: 1rem;
+	background-color: #ACACB4;
+} 
+.chat_icon{
+	background: pink;
+	border-radius:50%;
+	height: 4rem; 
+	width: 4rem;  
+	margin-left:0.5rem;  
+	margin-top: 0.5rem;
+}           
+.chat_name{
+	font-size: 1.5rem;
+	background-color: #0062CC; 
+	width: 14rem;
+	height: 1.5rem;
+	margin-left: 5rem;
+	margin-top: -4.1rem;
+}
+.chat_jianjei{ 
+	background-color: red;
+	width: 80%;
+	height: 1.5rem;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	margin-left: 5rem;
+	margin-top: 0.6rem;
+	font-size: 0.9em;
+}
+.chat_date{
+	margin-left: 23.5rem;
+	margin-top: -3.5rem;
+	 
+}
