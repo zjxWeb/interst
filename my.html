@@ -23,25 +23,25 @@
 		</div>
 		<div>
 		    <ul class="mainList">
-		    	<li>
+		    	<li id="myMaterial">
 		    		<img src=""/>
 		    		<p>我的资料</p>
-		    		<span class="mui-icon mui-icon-arrowright icLe"></span>
+		    		<span class="mui-icon mui-icon-arrowright micLe"></span>
 		    	</li>
-		    	<li>
+		    	<li id="myAttention">
 		    		<img src=""/>
 		    		<p>我的关注</p>
-		    		<span class="mui-icon mui-icon-arrowright icLe"></span>
+		    		<span class="mui-icon mui-icon-arrowright micLe"></span>
 		    	</li>
-		    	<li>
+		    	<li id="myServer">
 		    		<img src="" alt="" />
 		    		<p>客服中心</p>
-		    		<span class="mui-icon mui-icon-arrowright icLe"></span>
+		    		<span class="mui-icon mui-icon-arrowright micLe"></span>
 		    	</li>
-		    	<li>
+		    	<li id="mySoftware">
 		    		<img src="" alt="" />
 		    		<p>关于软件</p>
-		    		<span class="mui-icon mui-icon-arrowright icLe"></span>
+		    		<span class="mui-icon mui-icon-arrowright micLe"></span>
 		    	</li>
 		    </ul>            
 		    <button type="button" id="goOut" class="mui-btn mui-btn-blue mui-btn-block main_button">退出登陆</button>
@@ -49,6 +49,14 @@
 		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
+			var myMaterial = document.getElementById('myMaterial');
+			var myAttention = document.getElementById('myAttention');
+			var myServer = document.getElementById('myServer');
+			var mySoftware = document.getElementById('mySoftware');
+			openPage(myMaterial,'myMaterial.html','myMaterial');
+			openPage(myAttention,'myAttention.html','myAttention');
+			openPage(myServer,'myServer.html','myServer');
+			openPage(mySoftware,'mySoftware.html','mySoftware');
 			mui.plusReady(function(){
 				var app =  document.getElementById("login");
 				var goOut = document.getElementById('goOut');

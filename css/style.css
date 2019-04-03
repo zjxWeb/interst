@@ -66,13 +66,40 @@
 .mainList li{
 	height: 40px;
 	margin-top: 10px;
+    background-color: white;
 }
 .mainList li p{
-	margin-top: -10px;
-	margin-left: 10vw;
+	margin-left: 2vw;
+    margin-top: -10px;
+}
+.micLe{
+	position: relative;
+	top: -30px;
+	left: 90vw;
+}
+/* myMaterial*/
+.myMainList{
+    margin-top: 52px;
+}
+.myMainList li{
+    background-color: white;
+	height: 40px;
+	margin-top: 10px;
 }
 .icLe{
 	position: relative;
-	top: -32px;
+	top: -20px;
 	left: 90vw;
+}
+.myMainList li p{
+	margin-left: 2vw;
+    position: relative;
+    top: 10px;
+}
+.myMainList li:nth-of-type(1) img{
+    width: 20px;
+    height: 20px;
+    margin-left: 90vw;
+    position: relative;
+    top: -20px;
 }
