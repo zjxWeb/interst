@@ -7,8 +7,9 @@
 	background: red;
 	float: left;
 	margin-left:4vw ;
-	margin-top: -3vh;
+	margin-top: 3vh; 
 	/*clear: both;*/
+	
 }
 .indexListTwo li{
 	width: 20vw;
@@ -19,6 +20,11 @@
 	margin-top: 30px;
 	margin-bottom: 10px;
 }
+.indexicon{  /* 主页 中间的 icon*/
+	width: 20vm; 
+	height: 80px;
+	
+}
 .mui-control-content {
 	background-color: white;
 	min-height: 215px;
@@ -26,7 +32,12 @@
 .mui-control-content .mui-loading {
 	margin-top: 50px;
 }
-/*辅助margin-top*/
+.mui-slider{
+	 
+	height: 16rem;;
+	
+}
+/*辅助margin-top*/ 
 .bloke{
 	clear: both;
 	width: 100vw;
@@ -66,40 +77,18 @@
 .mainList li{
 	height: 40px;
 	margin-top: 10px;
-    background-color: white;
 }
 .mainList li p{
-	margin-left: 2vw;
-    margin-top: -10px;
-}
-.micLe{
-	position: relative;
-	top: -30px;
-	left: 90vw;
-}
-/* myMaterial*/
-.myMainList{
-    margin-top: 52px;
-}
-.myMainList li{
-    background-color: white;
-	height: 40px;
-	margin-top: 10px;
+	margin-top: -10px;
+	margin-left: 10vw;
 }
 .icLe{
 	position: relative;
-	top: -20px;
+	top: -32px;
 	left: 90vw;
 }
-.myMainList li p{
-	margin-left: 2vw;
-    position: relative;
-    top: 10px;
+.my-icon{
+	width: 20vm; 
+	height: 80px;  
 }
-.myMainList li:nth-of-type(1) img{
-    width: 20px;
-    height: 20px;
-    margin-left: 90vw;
-    position: relative;
-    top: -20px;
-}
+ 
