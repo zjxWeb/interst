@@ -4,7 +4,7 @@ function openPage (obj,url,id ){
 			obj.addEventListener('tap',function(){
 				mui.openWindow({
 					url:url,
-					id:id
+					id:id   
 				})
 			})
 		})
