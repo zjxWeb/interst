@@ -92,16 +92,17 @@
 	margin-top: 10px;
 }
 .mainList li p{
-	margin-top: -10px;
-	margin-left: 10vw;
+	margin-top: -2rem;
+	margin-left: 3.5rem;
 }
 .icLe{
 	position: relative;
 	top: -32px;
 	left: 90vw;
 }
-.my-icon{
-	width: 20vm; 
-	height: 80px;  
+.mainList img{    /* 下面小图标的样式*/
+	width: 2rem; 
+	height: 2rem;  
+	background-color: red;
+	margin-left: 1rem;
 }
- 

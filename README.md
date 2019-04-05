@@ -14,7 +14,6 @@ zhangzhang
 		测试账号：
 		email:zhangjianxiong@zhangjianxiong.com
 		password:111111
-<<<<<<< HEAD
 	``
 	** 必须先获取到登陆后的token **
 	-  遇到的问题
@@ -78,7 +77,6 @@ zhangzhang
 	``
 	** 注意：此处返回的是一个数组，而不是一个对象**
 	** 必须先获取到登陆后的token **
-=======
 	```
 	-  遇到的问题
 			--  在相同的css当中，要在不同的页面使用，注意页面的布局，否则，就不要采用。
@@ -98,4 +96,3 @@ dengdeng
 		- 
 		
 	
->>>>>>> 97f28f90b5af223057e8fbcae7556a68b4684c5f
