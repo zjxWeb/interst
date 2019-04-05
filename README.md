@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 **以下接口为本地测试完善好才上传至服务器，请自己将127.0.0.1 换成 zhangjianxiong.club 如有什么问题 请联系QQ：1184159966**
 
 1. 个人信息的接口为 
 	``
+=======
+------------------------------------
+zhangzhang
+
+1. 个人信息的接口为 id，name,email,avatar
+	```
+>>>>>>> 97f28f90b5af223057e8fbcae7556a68b4684c5f
 		http://zhangjianxiong.club:5000/api/users/current
 		请求类型：GET
 		向服务端传递参数：无
@@ -9,6 +17,7 @@
 		测试账号：
 		email:zhangjianxiong@zhangjianxiong.com
 		password:111111
+<<<<<<< HEAD
 	``
 	** 必须先获取到登陆后的token **
 	-  遇到的问题
@@ -72,3 +81,24 @@
 	``
 	** 注意：此处返回的是一个数组，而不是一个对象**
 	** 必须先获取到登陆后的token **
+=======
+	```
+	-  遇到的问题
+			--  在相同的css当中，要在不同的页面使用，注意页面的布局，否则，就不要采用。
+			-- 
+ 
+
+
+
+--------------------------
+dengdeng
+	-  4-4 
+		- 新写 luntan.html  页面 
+		- 修改json文件 默认启动页为tabber.html
+		- 
+	
+	- 遇到的问题
+		- 
+		
+	
+>>>>>>> 97f28f90b5af223057e8fbcae7556a68b4684c5f

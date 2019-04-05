@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+			<nav class="mui-bar mui-bar-tab">
+        <a id="defaultTab" class="mui-tab-item mui-active" href="index.html">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item" href="luntan.html">
+            <span class="mui-icon mui-icon-pengyouquan"><span style="display: none;" class="mui-badge"></span></span>
+            <span class="mui-tab-label">论坛</span> 
+        </a>
+        <a class="mui-tab-item" href="my.html"> 
+            <span class="mui-icon mui-icon-person"></span> 
+            <span class="mui-tab-label">我</span>  
+        </a> 
+        </nav>
+		<script src="js/mui.min.js"></script>
+			
+		<script type="text/javascript">
+		mui.init();
+		var subpages = ['index.html','luntan.html', 'my.html'];
+		var subpage_style = {
+			top:'0px',  
+			bottom: '51px'
+		};
+		
+		
+		var aniShow = {};
+		
+		mui.plusReady(function() {
+			var self = plus.webview.currentWebview();
+			for (var i = 0; i < subpages.length; i++) {
+				var temp = {};
+				var sub = plus.webview.create(subpages[i], subpages[i], subpage_style);
+				if (i > 0) {
+					sub.hide();
+				}else{ 
+					temp[subpages[i]] = "true";
+					mui.extend(aniShow,temp);
+				}
+				self.append(sub);
+			}
+		});
+		var activeTab = subpages[0];
+		
+		mui('.mui-bar-tab').on('tap', 'a', function(e) {
+			var targetTab = this.getAttribute('href');
+			if (targetTab == activeTab) {
+				return;
+			}
+
+			if(mui.os.ios||aniShow[targetTab]){
+				plus.webview.show(targetTab);
+			}else{
+				var temp = {};
+				temp[targetTab] = "true";
+				mui.extend(aniShow,temp);
+				plus.webview.show(targetTab,"fade-in",300);
+			}
+			plus.webview.hide(activeTab);
+			activeTab = targetTab;
+		});
+		document.addEventListener('gohome', function() {
+			var defaultTab = document.getElementById("defaultTab");
+			mui.trigger(defaultTab, 'tap');
+			var current = document.querySelector(".mui-bar-tab>.mui-tab-item.mui-active");
+			if (defaultTab !== current) {
+				current.classList.remove('mui-active');
+				defaultTab.classList.add('mui-active');
+			} 
+		});
+ 
+		</script>
+	</body>
+
+</html>

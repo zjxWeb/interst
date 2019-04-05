@@ -1,23 +1,32 @@
 /* 全局的js,css */
 *{margin: 0; padding: 0; list-style: none;}
+.mui-bar-nav{  /* 顶部bar的颜色*/
+	background-color: #2196f3;
+}
 /*主页的样式*/
 .indexListOne li{
 	width: 20vw;
 	height: 80px;
-	background: red;
+	/* background: red; */
 	float: left;
 	margin-left:4vw ;
-	margin-top: -3vh;
+	margin-top: 3vh; 
 	/*clear: both;*/
-}
+	
+} 
 .indexListTwo li{
 	width: 20vw;
 	height: 80px;
-	background: red;
+	/* background: red; */
 	float: left;
 	margin-left:4vw ;
 	margin-top: 30px;
 	margin-bottom: 10px;
+}
+.indexicon{    /* 主页 中间的 icon*/
+	width: 20vm; 
+	height: 80px;
+	
 }
 .mui-control-content {
 	background-color: white;
@@ -26,7 +35,22 @@
 .mui-control-content .mui-loading {
 	margin-top: 50px;
 }
-/*辅助margin-top*/
+.mui-slider{    /* 轮播图外框的样式*/
+	/* margin-top: 0.5rem; */
+	width: 100%;
+	height: 13rem;
+	/* margin-left: 2.5%; */
+	/* border:10px solid black; */
+	/* border-radius: 25pt;  */
+}
+.mui-slider img{    /*轮播图的图片*/
+	/* border-radius: 15pt; */
+	height: 12rem;
+}
+.mui-slider-indicator{
+	margin-top:-1rem;
+}
+/*辅助margin-top*/ 
 .bloke{
 	clear: both;
 	width: 100vw;
@@ -66,40 +90,18 @@
 .mainList li{
 	height: 40px;
 	margin-top: 10px;
-    background-color: white;
 }
 .mainList li p{
-	margin-left: 2vw;
-    margin-top: -10px;
-}
-.micLe{
-	position: relative;
-	top: -30px;
-	left: 90vw;
-}
-/* myMaterial*/
-.myMainList{
-    margin-top: 52px;
-}
-.myMainList li{
-    background-color: white;
-	height: 40px;
-	margin-top: 10px;
+	margin-top: -10px;
+	margin-left: 10vw;
 }
 .icLe{
 	position: relative;
-	top: -20px;
+	top: -32px;
 	left: 90vw;
 }
-.myMainList li p{
-	margin-left: 2vw;
-    position: relative;
-    top: 10px;
+.my-icon{
+	width: 20vm; 
+	height: 80px;  
 }
-.myMainList li:nth-of-type(1) img{
-    width: 20px;
-    height: 20px;
-    margin-left: 90vw;
-    position: relative;
-    top: -20px;
-}
+ 
