@@ -10,9 +10,10 @@
 } 
 .chat-list{
 	height: 5rem;
-	width: auto; 
+	width: 100%; 
 	margin-top: 1rem;
 	background-color: #ACACB4;
+	float: left;
 } 
 .chat_icon{
 	background: pink;
@@ -41,7 +42,8 @@
 	font-size: 0.9em;
 }
 .chat_date{
-	margin-left: 23.5rem;
+	/* margin-left: 23.5rem; */
 	margin-top: -3.5rem;
+	float: right;
 	 
 }
