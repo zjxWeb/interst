@@ -93,7 +93,8 @@
 }
 .mainList li p{
 	margin-top: -2rem;
-	margin-left: 3.5rem;
+	margin-left: 4rem;
+	color: #333333;
 }
 .icLe{
 	position: relative;
@@ -103,6 +104,6 @@
 .mainList img{    /* 下面小图标的样式*/
 	width: 2rem; 
 	height: 2rem;  
-	background-color: red;
-	margin-left: 1rem;
+	/* background-color: red; */
+	margin-left: 1.3rem;
 }
