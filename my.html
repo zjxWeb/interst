@@ -23,22 +23,22 @@
 		</div>   
 		<div>
 		    <ul class="mainList">   
-		    	<li>
+		    	<li id="my_ziliao">
 		    		<img src="img/my_ziliao1.png"/ alt=""/> 
 		    		<p>我的资料</p> 
 		    		<span class="mui-icon mui-icon-arrowright icLe"></span>    
 		    	</li>
-		    	<li>
+		    	<li id="my_guanzhu">
 		    		<img src="img/my_guanzhu1.png"/alt=""/>
 		    		<p>我的关注</p>
 		    		<span class="mui-icon mui-icon-arrowright icLe"></span>
 		    	</li>
-		    	<li>
+		    	<li id="my_kefu">
 		    		<img src="img/my_kefu1.png" alt="" />
 		    		<p>客服中心</p>
 		    		<span class="mui-icon mui-icon-arrowright icLe"></span>
 		    	</li>
-		    	<li>
+		    	<li id="my_guanyu">
 		    		<img src="img/my_guanyu1.png" alt="" />
 		    		<p>关于软件</p>
 		    		<span class="mui-icon mui-icon-arrowright icLe"></span>
@@ -53,6 +53,19 @@
 				var app =  document.getElementById("login");
 				var goOut = document.getElementById('goOut');
 				var name = document.getElementById('name');
+				/* ---------- */
+				var my_ziliao = document.getElementById('my_ziliao');
+				var my_guanzhu = document.getElementById('my_guanzhu');
+				var my_kefu = document.getElementById('my_kefu');
+				var my_guanyu = document.getElementById('my_guanyu');
+				openPage(my_ziliao,'myMaterial.html','myMaterial'); 
+				openPage(my_guanzhu,'myAttention.html','myAttention'); 
+				openPage(my_kefu,'myServer.html','myServer'); 
+				openPage(my_guanyu,'mySoftware.html','mySoftware');  
+				/* ---------- */
+				
+				
+				
 				app.addEventListener("tap",function(){
 					  var Token = localStorage.getItem('token');
 					mui.ajax({
