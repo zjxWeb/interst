@@ -16,7 +16,7 @@
 			.mui-input-group {
 				margin-top: 10px;
 			}
-			
+			 
 			.mui-input-group:first-child {
 				margin-top: 20px;
 			}
@@ -91,6 +91,7 @@
 
 	<body>
 		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
 			<h1 class="mui-title">登录</h1>
 		</header>
 		<div class="mui-content">
@@ -128,6 +129,7 @@
 		<script src="js/mui.min.js"></script>
 		<script src="js/mui.enterfocus.js"></script>
 		<script src="js/app.js"></script>
+		<script src="js/index.js"></script>
 		<script>
 			mui.init();
      		mui.plusReady(function(){
@@ -136,7 +138,11 @@
              var password=document.getElementById("password");
             var login = document.getElementById('login');
             var err = document.getElementById('err');
-            login.addEventListener('tap',function(){
+			/*  -----*/
+			var reg = document.getElementById('reg');
+			openPage(reg,'reg.html','reg');
+            /* ------*/
+			login.addEventListener('tap',function(){
             	
             
              mui.ajax('http://www.zhangjianxiong.club:5000/api/users/login',{

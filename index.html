@@ -10,7 +10,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>   
 <body>   
-	<header class="mui-bar mui-bar-nav"> 
+	<header class="mui-bar mui-bar-nav">
+		<a class="mui-pull-right" style="font-size: 1.3rem;margin-top: 0.6rem;" id="qingdenglu">请登录</a>
 	    <h1 class="mui-title">首页</h1>    
 	</header> 
 	 
@@ -148,7 +149,7 @@
 						<li class="mui-table-view-cell">
 							第二个选项卡子项-3 
 						</li>
-					</ul>
+					</ul> 
 				</div>
 				<div id="item3" class="mui-control-content" style="height:100%;">
 					<ul class="mui-table-view">
@@ -180,6 +181,7 @@
 		var listSix = document.getElementById('listSix');
 		var listSe = document.getElementById('listSe');
 		var listEg = document.getElementById('listEg');
+		var qingdenglu = document.getElementById('qingdenglu');
 		openPage(listOne,'chat_list_yumaoqiu.html','chat_list_yumaoqiu');
 		openPage(listTwo,'chat_list_sheying.html','chat_list_sheying');
 		openPage(listthree,'chat_list_shougong.html','chat_list_shougong');
@@ -188,6 +190,7 @@
 		openPage(listSix,'chat_list_zixingche.html','chat_list_zixingche');
 		openPage(listSe,'chat_list_hangmo.html','chat_list_hangmo');
 		openPage(listEg,'chat_list_zhuoyou.html','chat_list_zhuoyou');
+		openPage(qingdenglu,'login.html','login');
 		
 		
 		mui.init({
