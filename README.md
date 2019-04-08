@@ -58,7 +58,7 @@ zhangzhang
 		[
 			{
 				"skills": [
-					"sds"
+					"sds" 
 				],
 				"_id": "5ca5f086c748a02e0c92f9a9",
 				"user": {
