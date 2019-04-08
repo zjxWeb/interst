@@ -96,3 +96,27 @@ dengdeng
 		- denglinzhe 123
 		
 	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**软件的思维导图**
+![try_play](README_files/1.png)
