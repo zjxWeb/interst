@@ -27,7 +27,7 @@
 			            <li class="mui-table-view-cell">
 			                <a class="mui-navigate-right">
 			                     <span>昵称</span>
-			                     <label class="personal-name">zhangzhang</label>
+			                     <label id="us" class="personal-name"></label>
 			                </a>
 			            </li>
 			            <li class="mui-table-view-cell">
@@ -51,7 +51,7 @@
 			            <li class="mui-table-view-cell">
 			                <a class="mui-navigate-right">
 			                     <span>联系方式</span>
-								 <label class="personal-name">18198037561</label>
+								 <label id="email" class="personal-name"></label>
 			                </a>
 			            </li>
 			        </ul>
@@ -63,8 +63,29 @@
         <script src="./js/index.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/mui.min.js"></script>
 		<script type="text/javascript">
-			mui.init()
-            var 
+			mui.init();
+			var btn = document.getElementById('btn');
+			var us = document.getElementById('us');
+			var email = document.getElementById('email');
+            mui.plusReady(function () {
+						var Token = localStorage.getItem('token');
+						mui.ajax({
+						type:"get",
+						url:"http://www.zhangjianxiong.club:5000/api/users/current",
+						dataType:'json',
+						headers:{
+							//获取本地存储的token
+							'Content-Type':'application/x-www-form-urlencoded',
+							'Authorization':Token
+						},
+						success:function(data){
+							console.log(data.email);
+							us.innerHTML = data.name;
+							email.innerHTML = data.email;
+							
+						}
+						});
+            });
 		</script>
 	</body>
 

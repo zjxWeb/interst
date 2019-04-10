@@ -16,6 +16,7 @@
 		<div class="mui-content">     
 		    <div class="my_av"> 
 		    	<div class="avt">
+					<img src="img/touxiang-5.png" >
 		    		<p id="name">我的用户名</p> 
 		    	</div>
 		    </div>
@@ -42,14 +43,14 @@
 		    		<p>关于软件</p>
 		    		<span class="mui-icon mui-icon-arrowright icLe"></span>
 		    	</li>
-		    </ul>            
+		    </ul>             
 		    <button type="button" id="goOut" class="mui-btn mui-btn-blue mui-btn-block main_button">退出登陆</button>
 		</div>
 		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			mui.plusReady(function(){
-				var app =  document.getElementById("login");
+				// var app =  document.getElementById("login");
 				var goOut = document.getElementById('goOut');
 				var name = document.getElementById('name');
 				/* ---------- */
@@ -65,28 +66,31 @@
 				
 				
 				
-				app.addEventListener("tap",function(){
-					  var Token = localStorage.getItem('token');
-					mui.ajax({
-					type:"get",
-					url:"http://www.zhangjianxiong.club:5000/api/users/current",
-					dataType:'json',
-					headers:{
-						'Content-Type':'application/x-www-form-urlencoded',
-						'Authorization':Token
-					},
-					success:function(data){
-						name.innerHTML = data.name;
-						if(goOut.tap){
-							Token = '';
-							mui.openWindow({
-							url:"index.html",
-								id:"index"
-							})
+				 // app.addEventListener("tap",function(){
+						mui.plusReady(function () {
+							  var Token = localStorage.getItem('token');
+						mui.ajax({
+						type:"get", 
+						url:"http://www.zhangjianxiong.club:5000/api/users/current",
+						dataType:'json',
+						headers:{
+							'Content-Type':'application/x-www-form-urlencoded',
+							'Authorization':Token
+						},
+						success:function(data){
+							name.innerHTML = data.name; 
+							if(goOut.tap){
+								Token = '';
+								mui.openWindow({
+								url:"tabber.html",
+									id:"tabber" 
+								})
+							}
 						}
-					}
 					})
 				})
+					 
+				// })
 			});
 		</script>
 	</body>

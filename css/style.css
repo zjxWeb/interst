@@ -118,14 +118,14 @@
 /*--------my.html-------*/
 .my_av{
 	width: 100vw;
-	height: 30vh;
-	background-color: #008000;
+	height: 25vh;
+	background-color: #FFFF00;
 	z-index: -1;
 }  
 .avt{
-	width: 80px;
+	width: 80px; 
 	height: 80px;
-	background:red;
+	/* background:red; */
 	position: relative;
 	top: 5vh;
 	left: 40%;  
@@ -134,7 +134,7 @@
 .avt p{
 	color: black;
 	position: relative;
-	top: 15vh;
+	top: 5vh;
 	left: 8px;
 }
 .main_button{
