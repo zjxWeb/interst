@@ -1,7 +1,13 @@
 {
-	"index.html": {
-		"refer": [
-			"test.html"
-		]
-	}
+  "index.html": {
+    "refer": [
+      "test.html"
+    ],
+    "resources": []
+  },
+  "login.html": {
+    "refer": [
+      "index.html"
+    ]
+  }
 }

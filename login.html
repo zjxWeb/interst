@@ -145,7 +145,7 @@
 			login.addEventListener('tap',function(){
             	
             
-             mui.ajax('http://www.zhangjianxiong.club:5000/api/users/login',{
+             mui.ajax('http://zhangjianxiong.club:5000/api/users/login',{
 				data:{
 				email:email.value,
 				password:password.value,
@@ -158,7 +158,7 @@
 			
 				if(data.success === true)
 				{
-					toast("登陆成功");
+					
 					mui.openWindow({
 					url:"index.html",
 						id:"index"
