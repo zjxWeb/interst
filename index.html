@@ -85,21 +85,21 @@
 		</ul>  -->    
 		<div class="mui-table-view index-btn">      
 			<ul id="index-btns" class="mui-table-view mui-grid-view index-btn-ul">
-		        <li class="mui-table-view-cell mui-col-xs-6 index-btn-li index-btn-left-border">
+		        <li class="mui-table-view-cell mui-col-xs-6 index-btn-li index-btn-left-border" id="listOne">
 		            <a href="#">
 		                <img src="img/index-middle-sheying.png">
 		                <div class="index-btn-title index-btn-green">摄影</div>
 		            	<span class="index-btn-desc">瞬间变成永恒</span></a></li>
-		        <li class="mui-table-view-cell mui-col-xs-6 index-btn-li">
+		        <li class="mui-table-view-cell mui-col-xs-6 index-btn-li" id="listTwo">
 		            <a href="#">
 		                <img src="img/index-middle-hangmo.png">
 		                <div class="index-btn-title index-btn-orange">航模</div>
 		            	<span class="index-btn-desc">心的飞翔</span></a></li>
-		        <li class="mui-table-view-cell mui-col-xs-6 index-btn-li index-btn-left-border">
+		        <li class="mui-table-view-cell mui-col-xs-6 index-btn-li index-btn-left-border" id="listThree">
 		            <a href="#"><img src="img/index-middle-zixingche.png">
 		                <div class="index-btn-title index-btn-pink">自行车</div>
 		            	<span class="index-btn-desc">脚踏上的自由</span></a></li>
-		        <li class="mui-table-view-cell mui-col-xs-6 index-btn-li">
+		        <li class="mui-table-view-cell mui-col-xs-6 index-btn-li" id="listFour"> 
 		            <a href="#">
 		                <img src="img/index-middle-zhuoyou.png">
 		                <div class="index-btn-title index-btn-blue">桌游</div>
@@ -495,10 +495,10 @@
 		var listFour = document.getElementById('listFour');
 		var qingdenglu = document.getElementById('qingdenglu');
 		
-		openPage(listOne,'chat_list_yumaoqiu.html','chat_list_yumaoqiu');
+		openPage(listOne,'chat_list_hangmo.html','chat_list_hangmo');
 		openPage(listTwo,'chat_list_sheying.html','chat_list_sheying');
-		openPage(listthree,'chat_list_shougong.html','chat_list_shougong');
-		openPage(listFour,'chat_list_saiche.html','chat_list_saiche');
+		openPage(listthree,'chat_list_zixingche.html','chat_list_zixingche');
+		openPage(listFour,'chat_list_zhuoyou.html','chat_list_zhuoyou');
 		openPage(qingdenglu,'login.html','login');
 		
 		
