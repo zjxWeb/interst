@@ -224,8 +224,8 @@
 .chat-list{
 	height: 5rem;
 	width: 100%; 
-	margin-top: 1rem;
-	background-color: #ACACB4;
+	margin-top: 0.1rem;
+	background-color: #FFFFFF; 
 	float: left;
 } 
 .chat_icon{
@@ -238,14 +238,14 @@
 }           
 .chat_name{
 	font-size: 1.5rem;
-	background-color: #0062CC; 
+	/* background-color: #0062CC; */
 	width: 14rem;
 	height: 1.5rem;
 	margin-left: 5rem;
 	margin-top: -4.1rem;
 }
 .chat_jianjei{ 
-	background-color: red;
+	/* background-color: red; */
 	width: 80%;
 	height: 1.5rem;
 	overflow: hidden;

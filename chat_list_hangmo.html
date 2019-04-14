@@ -14,45 +14,45 @@
 	<body>   
 		<header class="mui-bar mui-bar-nav">
 			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-			<h1 class="mui-title">羽毛球圈</h1>
+			<h1 class="mui-title">航模圈</h1>
 		</header>
 		<!--下拉刷新容器-->
 		<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
 			<div class="mui-scroll">
 				<!--数据列表-->
-				 <ul class="mui-table-view"id="datalist_1"> 
-								<li class="chat-list">
+				 <ul class="mui-table-view"id="datalist_1">
+								<li class="chat-list" id="chat_list_1">
 									<img src="" class="chat_icon">
-									<div class="chat_name">象牙山致富交流</div>
+									<div class="chat_name">航模制作图纸①群</div>
 									<div class="chat_jianjei">大叫好我叫FHP 很高兴认识大家在这里阿大苏打阿松大s</div>
 									<div class="chat_date">14:23</div>
 								</li> 
 								
-								<li class="chat-list">
+								<li class="chat-list" id="chat_list_2">
 									<img src="" class="chat_icon">
 									<div class="chat_name">象牙山致富交流</div>
 									<div class="chat_jianjei">大叫好我叫FHP 很高兴认识大家在这里阿大苏打阿松大s</div>
 									<div class="chat_date">14:23</div> 
 								</li> 
-								<li class="chat-list">
+								<li class="chat-list" id="chat_list_3">
 									<img src="" class="chat_icon">
 									<div class="chat_name">象牙山致富交流</div>
 									<div class="chat_jianjei">大叫好我叫FHP 很高兴认识大家在这里阿大苏打阿松大s</div>
 									<div class="chat_date">14:23</div>
 								</li> 
-								<li class="chat-list">
+								<li class="chat-list" id="chat_list_4">
 									<img src="" class="chat_icon">
 									<div class="chat_name">象牙山致富交流</div>
 									<div class="chat_jianjei">大叫好我叫FHP 很高兴认识大家在这里阿大苏打阿松大s</div>
 									<div class="chat_date">14:23</div>
 								</li>  
-								<li class="chat-list">
+								<li class="chat-list" id="chat_list_5">
 									<img src="" class="chat_icon">
 									<div class="chat_name">象牙山致富交流</div>
 									<div class="chat_jianjei">大叫好我叫FHP 很高兴认识大家在这里阿大苏打阿松大s</div>
 									<div class="chat_date">14:23</div>
 								</li> 
-								<li class="chat-list">
+								<li class="chat-list" id="chat_list_6">
 									<img src="" class="chat_icon">
 									<div class="chat_name">象牙山致富交流</div>
 									<div class="chat_jianjei">大叫好我叫FHP 很高兴认识大家在这里阿大苏打阿松大s</div>
@@ -62,9 +62,12 @@
 			</div>
 		</div>
 		<script src="js/mui.min.js"></script>
+		<script src="js/index.js"></script>
 		<script>
 			
+			var chat_list_1 = document.getElementById('chat_list_1');
 			
+			openPage(chat_list_1,'chat_hangmo1.html','chat_hangmo1');
 			
 			
 		
