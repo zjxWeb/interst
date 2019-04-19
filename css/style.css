@@ -365,12 +365,19 @@
 	padding: 1rem;
 }
 .index_list_art{
+	padding-left: 1rem;
+	padding-right: 1rem;
 	padding: 1rem;
-	
+	background:#DDDDDD;
 	
 }
 .index_list_art img{
 	width: 90%;
 	margin-left: 5%;
 	margin-top: 1rem;
+}
+.index_list_art p{
+	font-size: 1.2rem;
+	color: #000000;
+	
 }

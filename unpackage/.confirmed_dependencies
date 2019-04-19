@@ -1,13 +1,29 @@
 {
-  "index.html": {
-    "refer": [
-      "test.html"
-    ],
-    "resources": []
-  },
-  "login.html": {
-    "refer": [
-      "index.html"
-    ]
-  }
+	"index.html": {
+		"refer": [
+			"test.html",
+			"index_list_sheyin_1.html",
+			"index_list_sheyin_3.html",
+			"index_list_sheyin_4.html",
+			"index_list_sheyin_2.html",
+			"index_list_sheyin_5.html"
+		],
+		"resources": []
+	},
+	"login.html": {
+		"refer": [
+			"index.html"
+		]
+	},
+	"tabber.html": {
+		"resources": [
+			"my.html",
+			"index.html"
+		],
+		"refer": [
+			"luntan.html",
+			"index.html",
+			"my.html"
+		]
+	}
 }
