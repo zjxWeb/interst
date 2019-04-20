@@ -121,7 +121,7 @@
 .my_av{
 	width: 100vw;
 	height: 25vh;
-	background-image: url(../img/wode_bejing.jpg); 
+	background-image: url(../img/my_bejing1.jpg);  
 	z-index: -1;
 }  
 .avt{
@@ -132,7 +132,7 @@
 	top: 5vh;
 	left: 40%;  
 	border-radius: 50%; 
-} 
+}  
 .avt p{
 	color: black;
 	position: relative;
@@ -150,7 +150,7 @@
 }
 .mainList li{
 	height: 40px;
-	margin-top: 2rem;
+	margin-top: 1.3rem;
 }
 .mainList li p{
 	font-size: 1.25rem;
