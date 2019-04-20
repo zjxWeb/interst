@@ -121,7 +121,7 @@
 .my_av{
 	width: 100vw;
 	height: 25vh;
-	background-image: url(../wode_bejing.jpg);
+	background-image: url(../img/wode_bejing.jpg); 
 	z-index: -1;
 }  
 .avt{
