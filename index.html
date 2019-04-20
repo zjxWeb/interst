@@ -11,9 +11,11 @@
 </head>   
 <body>   
 	<header class="mui-bar mui-bar-nav">
-		<a class="mui-pull-right" style="font-size: 1.3rem;margin-top: 0.6rem;" id="qingdenglu">请登录</a>
+		<a class="mui-pull-right mui-icon mui-icon-contact"  id="qingdenglu" style="color: #FFFFFF;"></a>
+		<a class="mui-pull-left mui-icon mui-icon-location"  id="local" style="color: #FFFFFF;" ><span style="font-size: 1rem;">七里河区</span></a>
 	    <h1 class="mui-title">首页</h1>    
 	</header> 
+	
 	 
 	<div class="mui-content">   
 		
@@ -389,12 +391,15 @@
 		var listthree = document.getElementById('listThree');
 		var listFour = document.getElementById('listFour');
 		var qingdenglu = document.getElementById('qingdenglu');
+		var local = document.getElementById('local');
+		
 		
 		openPage(listOne,'quanzi_sheying.html','quanzi_sheying');
 		openPage(listTwo,'quanzi_hangmo.html','quanzi_hangmo'); 
 		openPage(listthree,'quanzi_zixingche.html','quanzi_zixingche'); 
 		openPage(listFour,'faqiquanzi.html','faqiquanzi'); 
 		openPage(qingdenglu,'login.html','login');
+		openPage(local,'map.html','map');
 		
 		
 		/* 摄影 */

@@ -121,7 +121,7 @@
 .my_av{
 	width: 100vw;
 	height: 25vh;
-	background-color: #FFFF00;
+	background-image: url(../wode_bejing.jpg);
 	z-index: -1;
 }  
 .avt{
@@ -137,7 +137,9 @@
 	color: black;
 	position: relative;
 	top: 5vh;
-	left: 8px;
+	font-size: 1.7rem;
+	margin-left: -2rem;
+	margin-top: -1.3rem;
 }
 .main_button{
 	width: 80vw;
@@ -148,11 +150,12 @@
 }
 .mainList li{
 	height: 40px;
-	margin-top: 10px;
+	margin-top: 2rem;
 }
 .mainList li p{
+	font-size: 1.25rem;
 	margin-top: -2rem;
-	margin-left: 4rem;
+	margin-left: 4.4rem;
 	color: #333333;
 }
 .icLe{
