@@ -25,5 +25,10 @@
 			"index.html",
 			"my.html"
 		]
+	},
+	"my.html": {
+		"refer": [
+			"my_fq.html"
+		]
 	}
 }

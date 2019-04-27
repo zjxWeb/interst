@@ -9,3 +9,8 @@ function openPage (obj,url,id ){
 			})
 		})
 		}
+//
+
+mui.plusReady(function() {
+plus.navigator.setStatusBarBackground("#00ACE9");
+});

@@ -40,6 +40,20 @@
         }
     },
     "plus" : {
+		
+			"safearea":{
+			 
+				"background":"#fff",
+			 
+					"bottom":{
+					 
+					"offset":"auto"
+					 
+					}
+			 
+			},
+			
+			
         "splashscreen" : {
             "autoclose" : true, /*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
             "waiting" : false,
@@ -178,43 +192,57 @@
         }
     },
     "dependencies" : {
-        "pages" : {
-            "index.html" : {
-                "resources" : [],
-                "refer" : [
-                    "test.html",
-                    "index_list_sheyin_1.html",
-                    "index_list_sheyin_3.html",
-                    "index_list_sheyin_4.html",
-                    "index_list_sheyin_2.html",
-                    "index_list_sheyin_5.html"
-                ],
-                "priority" : 0
-            },
-            "login.html" : {
-                "resources" : [],
-                "refer" : [ "index.html" ],
-                "priority" : 0
-            },
-            "tabber.html" : {
-                "resources" : [ "my.html", "index.html" ],
-                "refer" : [ "luntan.html" ],
-                "priority" : 0
-            }
-        },
-        "idle" : {
-            "resources" : [
-                "LICENSE",
-                "js/mui.min.js",
-                "fonts/mui.ttf",
-                "css/mui.min.css",
-                "css/style.css",
-                "js/mui.js",
-                "css/mui.css",
-                "js/index.js",
-                "README.md"
-            ]
-        }
-    },
+		"pages": {
+			"index.html": {
+				"resources": [],
+				"refer": [
+					"test.html",
+					"index_list_sheyin_1.html",
+					"index_list_sheyin_3.html",
+					"index_list_sheyin_4.html",
+					"index_list_sheyin_2.html",
+					"index_list_sheyin_5.html"
+				],
+				"priority": 0
+			},
+			"login.html": {
+				"resources": [],
+				"refer": [
+					"index.html"
+				],
+				"priority": 0
+			},
+			"tabber.html": {
+				"resources": [
+					"my.html",
+					"index.html"
+				],
+				"refer": [
+					"luntan.html"
+				],
+				"priority": 0
+			},
+			"my.html": {
+				"resources": [],
+				"refer": [
+					"my_fq.html"
+				],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"LICENSE",
+				"js/mui.min.js",
+				"fonts/mui.ttf",
+				"css/mui.min.css",
+				"css/style.css",
+				"js/mui.js",
+				"css/mui.css",
+				"js/index.js",
+				"README.md"
+			]
+		}
+	},
     "fullscreen" : false
 }

@@ -1,11 +1,24 @@
 /*-----------------全局的css-------------------*/
 *{margin: 0; padding: 0; list-style: none; font-family: "黑体"/* PingFangSC-Regular, sans-serif */;}   
 * { touch-action: none; }
+ body{
+ 
+          padding-top: constant(safe-area-inset-top);
+ 
+        
+ 
+        .mui-bar.mui-bar-nav:top: constant(safe-area-inset-top);
+ 
+        
+ 
+}
+
+
 .mui-bar.mui-bar-nav{  /* 顶部bar的颜色*/
 	/* background-color: #2196f3;  */
 	background-color:#00ACE9;
 }
-.mui-title{color: white;}
+.mui-title{color: white;} 
 .mui-action-back{
 	color: #FFFFFF;
 }
