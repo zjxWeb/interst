@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			.Item{
+				width: 100%;
+				height: 5rem;
+				margin-left:100%;
+				margin-top: 1rem;
+				background-color: #0062CC; 
+			}
+			
+		</style>
+	</head>
+	
+			
+	<body> 
+		
+		<div class="Item">
+			
+		</div>
+		<div class="Item">
+			
+		</div>
+		<div class="Item">
+			
+		</div>
+		<div class="Item">
+			
+		</div>
+		<div class="Item">
+			
+		</div>
+		<div class="Item">
+			
+		</div>
+		<div class="Item">
+			
+		</div>
+		<div class="Item">
+			
+		</div>
+		<div class="Item">
+			
+		</div>
+		
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			
+			$(function(){
+			 ListView.Init();
+			});
+			var ListView={
+			 Init:function(){
+			 $(".Item span").css("width",$(".ListView").width()/4+"px");
+			 for(var i=0;i<$(".Item").length;i++){
+			 var target=$(".Item")[i];
+			 $(target).animate({marginLeft:"0px"},300+i*100);
+			 }
+			 },
+			 Update:function(){
+			 $(".ListView .c .Item").remove();
+			 for(var i=0;i<10;i++){
+			 var newItem=$("<div class=\"Item\"> <span>test</span> <span>男/"+i+"</span> <span>四川省，成都市，锦江区</span> <span>详细说明</span> </div>");
+			 $(newItem).find("span").css("width",$(".ListView").width()/4+"px");
+			 $(".ListView .c").append(newItem);
+			 $(newItem).animate({marginLeft:"0px"},300+i*100);
+			 }
+			 }
+			}
+			
+			
+			
+			
+			// ----------------------
+			
+			  $(window).scroll(function () {
+			  var scrollTop = $(this).scrollTop();
+			  var scrollHeight = $(document).height();
+			  var windowHeight = $(this).height();
+			  if (scrollTop + windowHeight == scrollHeight) {
+			 
+			  //此处是滚动条到底部时候触发的事件，在这里写要加载的数据，或者是拉动滚动条的操作
+			 
+			//var page = Number($("#redgiftNextPage").attr('currentpage')) + 1;
+			//redgiftList(page);
+			//$("#redgiftNextPage").attr('currentpage', page + 1);
+			 
+			  }
+			 });
+		</script>
+	</body>
+
+</html>
